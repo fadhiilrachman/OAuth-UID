@@ -77,7 +77,7 @@ class Uid {
     $code = isset($query['code']) ? $query['code'] : null;
     $error = isset($query['error']) ? $query['error'] : null;
     if('access_denied' == $error) {
-      redirect(base_url('auth/login') . '?auth=failed&access_denied');
+      //throw new Exception();
     }
     if (null !== $code) {
       $t = $this->requestAccessToken($code);

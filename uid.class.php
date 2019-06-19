@@ -17,7 +17,6 @@ class Uid {
 
   public function __construct(string $client_id, string $client_secret, string $redirect_uri)
   {
-    parent::__construct();
     $this->client_id = $client_id;
     $this->client_secret = $client_secret;
     $this->redirect_uri = $redirect_uri;

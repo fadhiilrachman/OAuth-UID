@@ -32,6 +32,11 @@ class Uid {
 
   public function getExpiresToken() {
     return $this->expires_in;
+  }}
+
+  public function setScope(array $scopes) {
+    $this->scope = $scopes;
+    return $this;
   }
 
   public function getAuthorizationUri(array $scopes) {

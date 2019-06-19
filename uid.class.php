@@ -35,12 +35,11 @@ class Uid {
   }}
 
   public function setScope(array $scopes) {
-    $this->scope = $scopes;
+    $this->scope = implode(' ', $scopes);
     return $this;
   }
 
-  public function getAuthorizationUri(array $scopes) {
-    $this->scope = implode(' ', $scopes);
+  public function getAuthorizationUri() {
     $get_param = array(
       'client_id' => $this->client_id,
       'redirect_uri' => urldecode($this->redirect_uri),

@@ -1,2 +1,2 @@
-# OAuth-U.ID
+# U.ID
 Simple OAUTH U.ID php class
